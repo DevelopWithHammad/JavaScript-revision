@@ -430,6 +430,11 @@
 
 
 
-function createNowHandler() {
-    
-}
+// // find 
+
+const studentsAge = [10, 13, 19, 21];
+console.log(studentsAge);
+
+const findingAge = studentsAge.find(age => age >= 18) 
+
+console.log(findingAge);
