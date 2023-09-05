@@ -432,9 +432,262 @@
 
 // // find 
 
-const studentsAge = [10, 13, 19, 21];
-console.log(studentsAge);
+// const studentsAge = [10, 13, 19, 21];
+// console.log(studentsAge);
 
-const findingAge = studentsAge.find(age => age >= 18) 
+// const findingAge = studentsAge.find(age => age >= 18) 
 
-console.log(findingAge);
+// console.log(findingAge);
+
+
+
+
+// // revision from yahoo baba array video
+// // array intro
+
+// let arrOfPrice = [180, 270, 100, 40, 250];
+// let arrOfDishes = ["Biryani", "Tikka", "Chana", "Paratha", "Nihari"];
+// let sum = 0;
+
+// // document.write("<ul>")
+// for(let i = 0; i < 5; i ++) {
+//     document.write(`The ${arrOfDishes[i]} is Rs: ${arrOfPrice[i]} <br />`)
+//     sum = sum + arrOfPrice[i]
+// }
+// document.write("<br />")
+
+// // document.write("</ul>")
+// document.write(`<b>Your total is: ${sum}</b>`)
+
+
+// // Creating an array
+
+// const arr = new Array()
+
+// arr[0] = true;
+// arr[1] = "Hammad"
+// arr[2] = 12
+// arr[3] = {
+//     languages: ["Javascript", "C++", "Python", "Ruby"]
+// }
+
+// console.log(arr);
+
+
+
+// let studentsData = [
+//     ["Hammad", 19, "SMIT", "Karachi"],
+//     ["Arham", 16, "HMIT", "Karachi"],
+//     ["Junaid", 18, "HMIT", "Karachi"],
+//     ["Aman", 14, "HMIT", "Karachi"],
+//     ["Nabeel", 21, "HMIT", "Karachi"],
+//     ["Haider", 25, "HMIT", "Karachi"],
+//     ["Ali", 22, "HMIT", "Karachi"],
+//     ["Usman", 20, "HMIT", "Karachi"],
+//     ["Abdullah", 19, "HMIT", "Karachi"]
+// ]
+// let studentsCount = 1;
+// // printing above array in log
+// console.log("studentsData ===>>>", studentsData);
+
+// console.log("Hammad's Data ====>>>>",studentsData[0]);
+
+// console.log("Hammad's age ====>>>>",studentsData[0][1]);
+
+
+
+// // printing above array in DOM
+
+// document.write("<b>" + "studentsData:" + "<br />" + "<br />" + "</b>")
+// document.write("<table border='1px'>")
+// for(let i = 0; i < studentsData.length; i++) {
+//     document.write("<tr>")
+//     // document.write("<td>" )
+
+//     document.write("<td>" + "<b>" + "Student "  + studentsCount++ + ":" + "</b>"    + " " + "</td>")
+//     for(let j = 0; j < 4; j++) {
+//         document.write("<td>" + studentsData[i][j]  + "</td>")
+//     }
+//     // document.write("</td>" )
+//     document.write("</tr>")
+//     document.write("<br />")
+
+// }
+// document.write("</table>")
+
+
+
+
+
+// // Modify method 
+
+// const studentData = ["Hammad", 19, "XI", "Software Engineer"];
+// console.log(students);
+
+// students[3] = "Mechinal Engineer"
+// console.log(students);
+
+
+
+// // Delete method:
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log(students);
+
+// delete students[0];
+
+// console.log(students);
+// document.write(students);
+
+
+
+// // Sort Method
+
+// // Example 1
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original students ==>>", students);
+
+// students.sort();
+// console.log("Sorted students ==>>", students);
+
+// // Example 2
+// const numbers = [3, 2, 5, 1 , 4];
+// console.log("Original Numbers", numbers);
+
+// numbers.sort();
+// console.log("Sorted Numbers", numbers);
+
+// // Example 3
+// const numbers = ["ت", "پ", "ب", "ا"];
+// console.log("Original Numbers", numbers);
+
+// numbers.sort();
+// console.log("Sorted Numbers", numbers);
+
+
+
+// // reverse method
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original Students ===>>>", students);
+
+// students.reverse();
+// console.log("Reversed Students ===>>>", students);
+
+
+
+
+// // Pop method
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original Students ===>>>", students);
+
+// students.pop(); // pop removes the last index of an array
+// console.log("Poped Students ===>>>", students);
+
+
+
+// // Push method
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original Students ===>>>", students);
+
+// students.push("Ali", "Yahya"); // push add the last index of an array
+// console.log("Pushed Students ===>>>", students);
+
+
+
+
+// // shift method
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original Students ===>>>", students);
+
+// students.shift(); // shift remove the first index of an array
+// console.log("Shifted Students ===>>>", students);
+
+
+
+
+// unshift method
+
+// const students = ["Hammad", "Aman", "Arham", "Junaid"];
+// console.log("Original Students ===>>>", students);
+
+// students.unshift("Yahya", "Ali"); // unshift add the first index of an array
+// console.log("Unshifted Students ===>>>", students);
+
+
+
+// // join
+
+// const studentsData = ["Aman", "Arham", "Junaid", "Ali"];
+// console.log(studentsData);
+
+// const joinedStudents = studentsData.join(" Ahmed, ")
+// console.log(joinedStudents);
+
+
+
+// // join
+
+// const students = ["Hammad", "Ali", "Khan", "Ahmed", ""]
+// console.log(students);
+
+// const fatherNameofStudents = students.join(" Rajput ")
+// console.log(fatherNameofStudents, "\n");
+
+
+
+// // slice
+
+// const students = ["Hammad", "Aman", "Ali", "Khan"];
+// console.log("original students ==>>>", students);
+
+// const cheetayStudents = students.slice(1);
+// console.log("cheetayStudents ==>>", cheetayStudents);
+
+
+
+// // splice
+
+// const students = ["Hammad", "Aman", "Ali", "Khan"];
+// console.log("original students ==>>>", students);
+
+// students.splice(2, 1, "Jawed")
+// console.log("addedStudents ==>>", students);
+
+
+
+
+// const arr = ["frwfwrfwe"];
+// console.log(arr);
+
+// //  checking condition with true-false
+// const checkingArrayOrNot = Array.isArray(arr)
+// console.log(checkingArrayOrNot);
+
+
+// //  checking condition with if-else
+// if(Array.isArray(arr)) {
+//     console.log(arr + " is an array");
+// }else {
+//     console.log(arr + " is not an array");
+// }
+
+// //  checking condition with tenary operator
+// const checkingArrayOrNot = Array.isArray(arr) ? arr + " is an array" : arr + " is not an array"
+// console.log(checkingArrayOrNot);
+
+
+
+
+// // IndexOf and lastIndexOf
+// const students = ["Hammad", "Ali", "Khan", "Zakir", "Ali"];
+// console.log("students ==>>", students);
+
+// const checkingIndex = students.indexOf("Ali");
+// console.log(checkingIndex);
+
+// const checkingIndex2 = students.lastIndexOf("Ali");
+// console.log(checkingIndex2);
